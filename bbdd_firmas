@@ -1,0 +1,129 @@
+-- phpMyAdmin SQL Dump
+-- version 4.8.5
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost:8889
+-- Generation Time: Sep 19, 2019 at 07:24 PM
+-- Server version: 5.7.25
+-- PHP Version: 5.6.40
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `lion_firmas`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `configuracion`
+--
+
+CREATE TABLE `configuracion` (
+  `id_configuracion` int(11) NOT NULL,
+  `nombre` varchar(255) DEFAULT NULL,
+  `valor` text
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `configuracion`
+--
+
+INSERT INTO `configuracion` (`id_configuracion`, `nombre`, `valor`) VALUES
+(1, 'nombre', 'Metrogas firmas'),
+(2, 'email_admin', 'info@@nano.com '),
+(3, 'color1', '#02b3e3'),
+(4, 'color2', '#02b3e3');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `usuarios`
+--
+
+CREATE TABLE `usuarios` (
+  `id_usuario` int(10) NOT NULL,
+  `id_privilegio` int(10) NOT NULL,
+  `nombre` varchar(255) NOT NULL,
+  `apellido` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `estado` int(11) NOT NULL DEFAULT '1',
+  `borrado` int(10) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `usuarios`
+--
+
+INSERT INTO `usuarios` (`id_usuario`, `id_privilegio`, `nombre`, `apellido`, `email`, `password`, `estado`, `borrado`) VALUES
+(1, 1, 'Admin', 'Admin', 'admin@admin.com', '89e495e7941cf9e40e6980d14a16bf023ccd4c91', 1, 0),
+(2, 1, 'Nano', '', 'nano@lionagency.com.ar', '89e495e7941cf9e40e6980d14a16bf023ccd4c91', 1, 0),
+(3, 1, 'MGAS', 'MGAS', 'MGAS', '382242315c2ec090cfede61100bcb8bd430f347b', 1, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `usuarios_ips`
+--
+
+CREATE TABLE `usuarios_ips` (
+  `id_usuarios_ips` int(11) NOT NULL,
+  `ip` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `date` timestamp NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `usuarios_ips`
+--
+
+INSERT INTO `usuarios_ips` (`id_usuarios_ips`, `ip`, `email`, `password`, `date`) VALUES
+(42, '::1', 'MGASasdsd', 'firma@mail943', '2019-09-19 02:24:32'),
+(43, '::1', 'MGASasdsd', 'asdasd', '2019-09-19 02:26:34');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `configuracion`
+--
+ALTER TABLE `configuracion`
+  ADD PRIMARY KEY (`id_configuracion`);
+
+--
+-- Indexes for table `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`id_usuario`);
+
+--
+-- Indexes for table `usuarios_ips`
+--
+ALTER TABLE `usuarios_ips`
+  ADD PRIMARY KEY (`id_usuarios_ips`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `configuracion`
+--
+ALTER TABLE `configuracion`
+  MODIFY `id_configuracion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `id_usuario` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `usuarios_ips`
+--
+ALTER TABLE `usuarios_ips`
+  MODIFY `id_usuarios_ips` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;

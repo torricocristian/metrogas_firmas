@@ -1,0 +1,186 @@
+/*.formulario-display {
+  display: inline-block;
+}
+#previewIMG7 ul {  
+  list-style-type: none;
+}*/
+
+@media (max-width: 991px) {
+    .menuBotoneraDerecha{
+    	  position:absolute;
+       right:30px;
+       top:-78px !important;
+    }
+    .mobileOnly{
+      display: block !important;
+      position:absolute;
+       left:30px;
+       top:150px;
+    }
+     .webOnly{
+        display:none !important;
+      }
+    .contenedorPrincipal{
+        margin-top:10% !important;       
+      }
+}
+
+  .dropdown-cuentas #liNovedades {
+    background-color: #00B9E8;
+    border-color: #00BBE7;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 0;
+    }
+   
+     .menuBotoneraDerecha{
+       position:absolute;
+       right:30px;
+       top:10px;
+    }
+   @media (min-width: 992px) {
+      .mobileOnly{
+         display:none !important;
+      }
+      .webOnly{
+        display:block !important;
+      }
+      .contenedorPrincipal{
+        padding-top:10px;       
+      }
+   }
+.contenedorPrincipal{       
+  position:relative;
+}
+
+
+.btn-info{
+   background-color: #64b0df;
+ background-image: linear-gradient(to bottom,#64b0df 0,#64b0df 100%);
+}
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info {
+    color: #fff;
+    background-color: #64b0df;
+    border-color: #269abc;
+}
+.btn-primary{
+   background-color: #64b0df;
+   background-image: linear-gradient(to bottom,#64b0df 0,#64b0df 100%);
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #64b0df;
+    border-color: #285e8e;
+}
+
+.btn-success{
+   background-color: #f68220;
+   background-image: linear-gradient(to bottom,#f68220 0,#f68220 100%);
+   border-color: #f68220;
+}
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open .dropdown-toggle.btn-success {
+    color: #fff;
+    background-color: #f68220;
+    border-color: #285e8e;
+}
+
+.panel-info > .panel-heading {    
+    background-color: #f68220 !important;
+    background-image:none;
+    border-color: #f68220 !important;
+    color: white;
+}
+.panel-info{
+  border-color: #f68220 !important;
+}
+.panel-heading > h3{
+  color: white !important;
+}
+/*.panel-info > .panel-heading {        
+        background-color: #f68220 !important;
+} */
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #64b0df !important;
+}
+
+.alert-danger {
+    background-color: #f68220;
+    border-color: #ebccd1;
+    color: #FFFFFF;
+}
+.alert-danger {
+    background-image: -webkit-linear-gradient(top,#f68220 0,#f68220 50%);
+    background-image: linear-gradient(to bottom,#f68220 0,#f68220 50%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2dede', endColorstr='#ffe7c3c3', GradientType=0);
+    border-color: #dca7a7;
+}
+
+.close{
+  color: white !important;
+}
+.text-danger{
+    color: #f68220;
+    font-weight: bold;
+}
+
+.btn-back, .btn-volver{
+  margin-top: 1%;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+    color: #fff;
+    background-color: #64b0df;
+}
+#liNovedades > a{
+  color: white;
+}
+
+#liNovedades>a:hover, #liNovedades>a:focus{
+  background-color: #64B0CE;
+  background-image: none;
+}
+#infoMessage{
+  color: #f68220 !important;
+    font-weight: bold;
+}
+.subtitulo-mensaje{
+  color: #f68220;
+  font-weight: bold;
+}
+.bg-success{
+  background-color: #f68220;
+  color: white;
+}
+
+.documentacionCambioTit > p{
+    font-style: italic;
+  }
+.nuevoSuministro, .analisisConfirmacion, .tituloConfirmacion, #counterWords{
+    color: #f68220;
+}
+.tituloConfirmacion{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .iframeMaps {
+    height: 50vh;
+  }
+}
+  
+a.buttonVolver {
+  -webkit-appearance: button !important;
+  -moz-appearance: button !important;
+  appearance: button !important;
+  padding: 3px 9px;
+
+  text-decoration: none;
+  color: initial;
+}
