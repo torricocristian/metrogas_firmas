@@ -1,7 +1,8 @@
-RewriteEngine on
+AuthType Basic
+AuthName "Password Protected Area"
+AuthUserFile /Applications/MAMP/htdocs/lion/metrogas/firmas/metrogas_firmas/.htpasswd
+Require valid-user
 
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
 
-RewriteRule ^(.*)$ index.php?rt=$1 [L,QSA]
-
+# Generar usuario y contraseña:
+# https://www.web2generators.com/apache-tools/htpasswd-generator
