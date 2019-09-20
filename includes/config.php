@@ -1,5 +1,6 @@
 <?php  
 
+
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL & E_STRICT);
@@ -18,10 +19,10 @@ define('AHORA', date("Y-m-d h:i:s"));
 
 
 //URL
-define ('_PATH_FRONT', "/Applications/MAMP/htdocs/lion/metrogas/firmas/");
-define ('_PATH', "/Applications/MAMP/htdocs/lion/metrogas/firmas/");
+define ('_PATH_FRONT', getcwd()."/");
+define ('_PATH', getcwd()."/");
 define ('_PUBLIC', _PATH."public/");
-define ('_URL', "http://localhost:8888/lion/metrogas/firmas/");
+define ('_URL', "http://localhost:8888/lion/metrogas/firmas/metrogas_firmas/");
 define ('_URL_ADMIN', _URL);
 define ('_CSS', _URL_ADMIN."public/css/");
 define ('_JS', _URL_ADMIN."public/js/");
