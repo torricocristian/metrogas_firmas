@@ -1,6 +1,6 @@
 AuthType Basic
 AuthName "Password Protected Area"
-AuthUserFile /Applications/MAMP/htdocs/lion/metrogas/firmas/metrogas_firmas/.htpasswd
+AuthUserFile /Applications/MAMP/htdocs/lion/metrogas/firmas/metrogas_firmas/app/.htpasswd
 Require valid-user
 
 
