@@ -4,5 +4,6 @@ AuthUserFile /Applications/MAMP/htdocs/lion/metrogas/firmas/metrogas_firmas/app/
 Require valid-user
 
 
+
 # Generar usuario y contraseña:
 # https://www.web2generators.com/apache-tools/htpasswd-generator

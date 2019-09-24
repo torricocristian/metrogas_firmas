@@ -1,0 +1,3 @@
+
+RewriteEngine On
+RewriteRule ^/?$ /Applications/MAMP/htdocs/lion/metrogas/firmas/metrogas_firmas/app/

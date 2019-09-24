@@ -1,4 +1,4 @@
-<?php $baseUrl = 'http://localhost:8888/lion/metrogas/firmas/metrogas_firmas/app/' ?>
+<?php $baseUrl = 'http://localhost:8888/lion/metrogas/firmas/metrogas_firmas/' ?>
 
 
 <!DOCTYPE html>
