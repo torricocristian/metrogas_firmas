@@ -435,6 +435,11 @@
                                                             <tr>
                                                                 <td width="100%" align="left" valign="top"
                                                                     style="font-family:Arial, Helvetica, sans-serif;font-size:0px;line-height:0px;text-transform:uppercase;margin:0;padding:0px;">
+                                                                    <a href="https://www.instagram.com/metrogas_ar/"
+                                                                        target="_blank" style="border:none;margin-right: 12px;">
+                                                                        <img src="<?= $baseUrl ?>/assets/form/instagram_icon.png"
+                                                                            width="22" height="22" border="0" style="opacity: .6;">
+                                                                    </a>    
                                                                     <a href="https://es-la.facebook.com/MetroGAS/"
                                                                         target="_blank" style="border:none">
                                                                         <img src="<?= $baseUrl ?>/assets/form/sc1.png"
