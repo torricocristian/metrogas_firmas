@@ -253,7 +253,7 @@
                                                             Código postal<br />
 
                                                             <input type="text" name="zip" class="finp"
-                                                                disabled="disabled" tabindex="7" value="C1267AAB" />
+                                                                 tabindex="7" value="C1267AAB" />
 
                                                         </label>
 
@@ -262,7 +262,7 @@
                                                             Ciudad<br />
 
                                                             <input type="text" name="city" class="finp"
-                                                                disabled="disabled" tabindex="8" value="CABA" />
+                                                             tabindex="8" value="CABA" />
 
                                                         </label>
 
@@ -300,10 +300,10 @@
 
                                                             País<br />
 
-                                                            <select disabled="disabled"
-                                                                style="width: 100%;display: block;">
-
-                                                                <option selected="selected">Argentina</option>
+                                                            <select 
+                                                                style="width: 100%;display: block;" name="country">
+                                                                <option selected="selected" value="Argentina">Argentina</option>
+                                                                
 
                                                             </select>
 
@@ -403,9 +403,7 @@
                                                             <tr>
                                                                 <td width="100%" align="left" valign="top"
                                                                     style="font-family:Arial, Helvetica, sans-serif;font-size:12px;line-height:13px;margin:0;padding:0px;padding-bottom:3px;">
-                                                                    <span class="texr-zip">C1267AAB</span> - <span
-                                                                        class="texr-city">CABA</span>, Argentina</span>
-                                                                </td>
+                                                                    <span class="text-zip">C1267AAB</span> <span class="text-guion">-</span> <span class="text-city">CABA</span><span class="texr-comma">,</span> <span class="text-country">Argentina</span>
                                                             </tr>
                                                             <tr>
                                                                 <td width="100%" align="left" valign="top"
@@ -531,7 +529,25 @@
                             obj.attr('href', 'mailto:' + val);
                         }
 
+                        if ($(this).attr('name') == 'zip') {
+                            if(val == ''){
+                                $('.text-guion').hide();
+                            }else{
+                                $('.text-guion').show();  
+                            }
+                        }
+
+
+                        if ($(this).attr('name') == 'city') {
+                            if(val == ''){
+                                $('.texr-comma').hide();
+                            }else{
+                                $('.texr-comma').show();  
+                            }
+                        }
+
                         obj.text(val);
+
                     });
 
 
