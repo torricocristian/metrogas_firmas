@@ -448,11 +448,11 @@
                                                                         <img src="<?= $baseUrl ?>/assets/form/sc2.png"
                                                                             width="38" height="20" border="0">
                                                                     </a>
-                                                                    <a href="https://www.linkedin.com/company/metrogas"
-                                                                        target="_blank" style="border:none">
-                                                                        <img src="<?= $baseUrl ?>/assets/form/sc3.png"
-                                                                            width="73" height="20">
-                                                                    </a>
+
+                                                                    <div class="content-linkedin">
+                                                                        <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: es_ES</script>
+                                                                        <script type="IN/FollowCompany" data-id="27571"></script>
+                                                                    </div>
                                                                 </td>
                                                             </tr>
 
