@@ -10,6 +10,13 @@
 
 (FYI la ruta absoluta se puede obtener con la función -> 'echo getcwd();' en PHP)
 
+
+## Requisitos del servidor 
+
+- Cualquier servidor que sea compatible con PHP.
+- PHP 5.x o superior.
+
+
 ## Datos para probar
 
 Usuario: MGAS
